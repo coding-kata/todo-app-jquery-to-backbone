@@ -1,9 +1,9 @@
 import TodoItemView from "./todo-item-view.js"
 import TodoItem from "./todo-item-model.js"
+
 $(function () {
     var $form = $('.todoForm');
     var $list = $('.todoList');
-
 
     function createTodoItem(text) {
         var model = new TodoItem({

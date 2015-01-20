@@ -3,15 +3,14 @@
 var {View} = Backbone;
 class TodoItemView extends View {
     constructor(options) {
-        // *... is a list tag.*
         this.tagName = 'li';
+
         // *Cache the template function for a single item.*
         this.template = _.template(`
         <input type="checkbox" class="<%= completed ? 'is-complete' : '' %>" <%= completed ? 'checked' : '' %>>
             <span class="todoText"><%- title %></span>
         <i class="removeBtn fa fa-times"></i>
         `);
-        this.input = '';
         // *Define the DOM events specific to an item.*
         this.events = {
             'click input': 'toggleComplete',

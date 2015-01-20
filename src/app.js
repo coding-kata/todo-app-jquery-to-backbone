@@ -1,24 +1,30 @@
+import TodoItemView from "./todo-item-view.js"
+import TodoItem from "./todo-item-model.js"
 $(function () {
     var $form = $('.todoForm');
     var $list = $('.todoList');
 
 
     function createTodoItem(text) {
-        var $li = $('<li>');
-        var $text = $('<span>').addClass('todoText').text(text);
-        var $checkbox = $('<input type="checkbox">');
-        var $remove = $('<i>').addClass('removeBtn fa fa-times');
-        $remove.on('click', function () {
-            if (!window.confirm('消しますよ')) {
-                return;
-            }
-            $li.remove();
+        var model = new TodoItem({
+            title: text
         });
-        $checkbox.on('click', function () {
-            $li.toggleClass('is-complete');
-        });
-        $li.append($checkbox, $text, $remove);
-        return $li;
+        var item = new TodoItemView({model});
+        //var $li = $('<li>');
+        //var $text = $('<span>').addClass('todoText').text(text);
+        //var $checkbox = $('<input type="checkbox">');
+        //var $remove = $('<i>').addClass('removeBtn fa fa-times');
+        //$remove.on('click', function () {
+        //    if (!window.confirm('消しますよ')) {
+        //        return;
+        //    }
+        //    $li.remove();
+        //});
+        //$checkbox.on('click', function () {
+        //    $li.toggleClass('is-complete');
+        //});
+        //$li.append($checkbox, $text, $remove);
+        return item.render().el;
     }
 
     $form.on('submit', function (e) {

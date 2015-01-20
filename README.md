@@ -2,6 +2,9 @@
 
 Refactoring todo app - migrate jquery to backbone.
 
+Please see original implementation.
+
+- [リファクタリングのためのテスト](http://hokaccha.github.io/slides/refactoring/ "リファクタリングのためのテスト")
 - [slides/refactoring at gh-pages · hokaccha/slides](https://github.com/hokaccha/slides/tree/gh-pages/refactoring "slides/refactoring at gh-pages · hokaccha/slides")
 
 Use [testium](https://github.com/groupon-testium/testium "testium") for E2E testing.

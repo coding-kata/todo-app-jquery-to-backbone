@@ -6,4 +6,4 @@ node_js:
 branches:
   only:
     - master
-    - stable
+    - gh-pages

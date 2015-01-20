@@ -18,6 +18,9 @@ class TodoItemView extends View {
             'click .removeBtn': 'removeItem'
         };
         super(options);
+
+
+        this.listenTo(this.model, 'destroy', this.remove);
     }
 
     // *Re-render the contents of the todo item.*
@@ -28,10 +31,15 @@ class TodoItemView extends View {
     }
 
     toggleComplete() {
-
+        this.model.toggle();
     }
 
     removeItem() {
+        if (!window.confirm('消しますよ')) {
+            return;
+        }
+        this.model.destroy();
+        return this;
     }
 }
 export default TodoItemView;

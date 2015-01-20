@@ -10,20 +10,6 @@ $(function () {
             title: text
         });
         var item = new TodoItemView({model});
-        //var $li = $('<li>');
-        //var $text = $('<span>').addClass('todoText').text(text);
-        //var $checkbox = $('<input type="checkbox">');
-        //var $remove = $('<i>').addClass('removeBtn fa fa-times');
-        //$remove.on('click', function () {
-        //    if (!window.confirm('消しますよ')) {
-        //        return;
-        //    }
-        //    $li.remove();
-        //});
-        //$checkbox.on('click', function () {
-        //    $li.toggleClass('is-complete');
-        //});
-        //$li.append($checkbox, $text, $remove);
         return item.render().el;
     }
 

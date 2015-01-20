@@ -8,5 +8,11 @@ class TodoItem extends Model {
             completed: false
         };
     }
+
+    toggle() {
+        this.save({
+            completed: !this.get('completed')
+        });
+    }
 }
 export default TodoItem;

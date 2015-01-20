@@ -7,7 +7,7 @@ class TodoItemView extends View {
         this.tagName = 'li';
         // *Cache the template function for a single item.*
         this.template = _.template(`
-        <input type="checkbox">
+        <input type="checkbox" class="<%= completed ? 'is-complete' : '' %>" <%= completed ? 'checked' : '' %>>
             <span class="todoText"><%- title %></span>
         <i class="removeBtn fa fa-times"></i>
         `);
@@ -19,7 +19,7 @@ class TodoItemView extends View {
         };
         super(options);
 
-
+        this.listenTo(this.model, 'change', this.render);
         this.listenTo(this.model, 'destroy', this.remove);
     }
 

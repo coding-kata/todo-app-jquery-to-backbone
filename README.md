@@ -1,4 +1,4 @@
-# todo-app-jquery-to-backbone
+# todo-app-jquery-to-backbone [![Build Status](https://travis-ci.org/coding-kata/todo-app-jquery-to-backbone.svg?branch=master)](https://travis-ci.org/coding-kata/todo-app-jquery-to-backbone)
 
 Refactoring todo app - migrate jquery to backbone.
 

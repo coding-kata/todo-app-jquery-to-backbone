@@ -15,6 +15,10 @@ Use [testium](https://github.com/groupon-testium/testium "testium") for E2E test
 
 jQuery based app => jQuery and Backbone Based app
 
+### Reference
+
+- [Backbone with ES6 | Mike Fowler](http://mikefowler.me/2014/06/11/backbone-with-es6/ "Backbone with ES6 | Mike Fowler")
+
 ## Installation
 
 ```

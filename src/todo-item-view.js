@@ -13,8 +13,8 @@ class TodoItemView extends View {
         `);
         // *Define the DOM events specific to an item.*
         this.events = {
-            'click input': 'toggleComplete',
-            'click .removeBtn': 'removeItem'
+            'click input': this.toggleComplete,
+            'click .removeBtn': this.removeItem
         };
         super(options);
 

@@ -11,7 +11,7 @@
   "scripts": {
     "start": "http-server",
     "build": "browserify src/app.js -t 6to5ify -o lib/bundle.js",
-    "watch": "watchify src/app.js -t 6to5ify -o lib/bundle.js",
+    "watch": "watchify src/app.js -d -t 6to5ify -o lib/bundle.js",
     "test": "mocha test/*.js"
   },
   "directories": {

@@ -8,7 +8,7 @@ function addTodo(text) {
     browser.click('.todoBtn');
 }
 describe("app-test", function () {
-    var text = 'todo test';
+    var text = 'todo text';
     before(injectBrowser());
     beforeEach(function () {
         browser = this.browser;

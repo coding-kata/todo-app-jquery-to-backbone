@@ -9,7 +9,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start":"http-server",
+    "start": "http-server",
+    "build": "browserify src/app.js -t 6to5ify -o lib/bundle.js",
+    "watch": "watchify src/app.js -d -t 6to5ify -o lib/bundle.js",
     "test": "mocha test/*.js"
   },
   "directories": {
@@ -21,12 +23,15 @@
     "url": "https://github.com/coding-kata/todo-app-jquery-to-backbone/issues"
   },
   "devDependencies": {
+    "6to5ify": "^3.1.2",
+    "browserify": "^8.1.1",
     "espower-loader": "^0.10.0",
     "http-server": "^0.7.4",
     "intelli-espower-loader": "^0.6.0",
     "mocha": "^2.1.0",
     "phantomjs": "^1.9.13",
     "power-assert": "^0.10.1",
-    "testium": "^2.3.0"
+    "testium": "^2.3.0",
+    "watchify": "^2.2.1"
   }
 }

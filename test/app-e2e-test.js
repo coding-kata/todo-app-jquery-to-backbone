@@ -48,7 +48,7 @@ describe("app-test", function () {
         });
         context("removeBtnをクリックしてconfirmでOKしたら", function () {
             it("li要素が消える", function () {
-                // confirmがfalseを返すようにする = キャンセル
+                // confirmがtrueを返すようにする = OK
                 browser.evaluate("return window.confirm = function() { return " + true + "; };");
                 browser.click('.todoList li .removeBtn');
                 browser.assert.elementDoesntExist(".todoList li");

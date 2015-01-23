@@ -2,6 +2,7 @@
 "use strict";
 var injectBrowser = require('testium/mocha');
 var assert = require("power-assert");
+var AppPage = require("./page-objects/app-page");
 var browser;
 function addTodo(text) {
     browser.setValue('.todoText', text);

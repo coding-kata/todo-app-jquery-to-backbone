@@ -15,12 +15,10 @@ AppPage.prototype.getTodoItems = function () {
  * @param todo the todo Element
  */
 AppPage.prototype.toggleTodo = function (todo) {
-    // @todo https://github.com/groupon-testium/webdriver-http-sync doesn't implemented Element#getElement.
     var input = todo.getElement('input[type="checkbox"]');
     input.click();
 };
 AppPage.prototype.removeTodo = function (todo) {
-    // @todo https://github.com/groupon-testium/webdriver-http-sync doesn't implemented Element#getElement.
     var input = todo.getElement('.removeBtn');
     input.click();
 };

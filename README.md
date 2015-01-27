@@ -12,8 +12,9 @@ Use [testium](https://github.com/groupon-testium/testium "testium") for E2E test
 ## Refactoring Pull Request
 
 - [migrate jquery to backbone by azu · Pull Request #1 · coding-kata/todo-app-jquery-to-backbone](https://github.com/coding-kata/todo-app-jquery-to-backbone/pull/1 "migrate jquery to backbone by azu · Pull Request #1 · coding-kata/todo-app-jquery-to-backbone")
-
-jQuery based app => jQuery and Backbone Based app
+  - jQuery based app => jQuery and Backbone Based app
+- [Refactoring test by page object #2](https://github.com/coding-kata/todo-app-jquery-to-backbone/pull/2 "Refactoring test by page object #2")
+  - apply page-object pattern
 
 ### Reference
 

@@ -31,7 +31,7 @@
     "mocha": "^2.1.0",
     "phantomjs": "^1.9.13",
     "power-assert": "^0.10.1",
-    "testium": "^2.3.0",
+    "testium": "^2.4.0",
     "watchify": "^2.2.1"
   }
 }
